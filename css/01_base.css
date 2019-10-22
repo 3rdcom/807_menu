@@ -1,0 +1,431 @@
+/* 基本設定 */
+
+* {
+	font-size:100%;
+	line-height:1.6;
+	margin:0px;
+	padding:0px;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	text-align:center;
+	font-size:100%;
+	color:#000000;
+	background: #FFFFFF;
+	font-family:"HG丸ｺﾞｼｯｸM-PRO","ＭＳ Ｐゴシック","メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","MS P Gothic","Osaka,Verdana,Arial","Helvetica","sans-serif";
+}
+
+img {
+	width:100%;
+	border:none;
+	vertical-align:top;
+	background-image:none;
+}
+strong {
+	font-size:110%;
+	color:#009933;
+}
+/*ページ全体のリンク指定*/
+a{/*リンクされた文字*/
+    color:#0000ff;
+    font-style:normal;
+}
+a:link {/*未訪問のリンク*/
+    color:#0000ff;
+    font-style:normal;
+}
+a:visited {/*訪問後のリンク*/
+    color:#0088bb;
+    font-style:normal;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#ff9900;
+    font-style:normal;
+}
+
+hr {
+	border-top: 1px solid #8c8b8b;
+	margin: 3px auto;
+}
+
+label{
+	color:initial;
+}
+label:hover{
+	color:#ff6633;
+}
+
+ul{
+	list-style-type:circle;
+	width:calc(100% - 20px);
+	margin-left:20px;
+}
+li{
+	font-weight:500;
+}
+p{
+	padding:2px;
+}
+rt {
+	font-size:70%;
+	margin-top:5px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="url"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="password"], 
+textarea, 
+select 
+{ 
+border: 2px inset #999999; 
+background-color: #ffffff; 
+padding:2px;
+border-radius: 0px;
+} 
+
+input:focus, 
+textarea:focus, 
+select:focus 
+{ 
+/*outline: 1px solid #ff9900 !important; */
+/*box-shadow: 0px 0px 2px 1px #ff6600 ;*/
+border-radius: 0px;
+background-color: #99ff99;
+} 
+
+textarea{
+	width:90%;
+	height:100px;
+	margin-bottom:5px;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="file"]{
+	margin:3px;
+	padding:5px 10px;
+}
+
+input[type="submit"].mini{
+	margin:2px;
+	padding:0px;
+}
+
+blockquote {
+	border: 1px solid #999999; 
+	padding: 3px;
+	background: #EFFBFB;
+}
+table {
+    border-spacing: 0px;
+}
+.clear { clear:both; }  
+.clear hr { display:none; }  
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+}
+.w30px {width:30px; margin: 0px auto; border:none;}
+.w60px {width:60px; margin: 0px auto; border:none;}
+.w90px {width:90px; margin: 0px auto; border:none;}
+.w90px_n_m {width:90px; border:none;}
+.w150px {width:150px; margin: 0px auto; border:none;}
+.w200px {width:200px; margin: 0px auto; border:none;}
+.w250px {width:250px; margin: 0px auto; border:none;}
+.w300px {width:300px; margin: 0px auto; border:none;}
+.w330px {width:330px; margin: 0px auto; border:none;}
+
+.w10percent {width:10%; margin: 0px auto; border:none;}
+.w20percent {width:20%; margin: 0px auto; border:none;}
+.w30percent {width:30%; margin: 0px auto; border:none;}
+.w40percent {width:40%; margin: 0px auto; border:none;}
+.w45percent {width:45%; margin: 0px auto; border:none;}
+.w50percent {width:50%; margin: 0px auto; border:none;}
+.w60percent {width:60%; margin: 0px auto; border:none;}
+.w70percent {width:70%; margin: 0px auto; border:none;}
+.w80percent {width:80%; margin: 0px auto; border:none;}
+.w90percent {width:90%; margin: 0px auto; border:none;}
+.w95percent {width:95%; margin: 0px auto; border:none;}
+.w100percent {width:100%; margin: 0px auto;}
+
+.font_red{color: #ff0000;}
+.font_blue{color: #0000ff;}
+.font_lightblue{color: #aaffff;}
+.font_green{color: #0B610B;}
+.font_yellow{color: #FFFF00;}
+.font_orange{color: #FF8000;}
+.font_daidai{color: #ff9900;}
+.font_pink{color: #ff99ff;}
+.font_mura{color: #9999ff;}
+.font_gunjyo{color: #ee9999;}
+.text_kyuu{color: #ffbbbb;font-size:130%;vertical-align:middle;}
+.text_syutu{font-weight: bold;color: #FF6600;}
+.text_mail{color: #CC0066; font-weight: bold;}
+.text_daidai{color: #ffcc00;font-size:130%;vertical-align:middle;}
+.text_small_em{font-size:0.8em;}
+.text_small_em_07{font-size:0.7em;}
+.text_small_em_08{font-size:0.8em;}
+.text_small_em_09{font-size:0.9em;}
+.font_70{font-size:70%;}
+.font_120{font-size:120%;}
+.font_150{font-size:150%;}
+.font_200{font-size:200%;}
+
+.font_bold{font-weight:bold;}
+.bk_green{background:#0B610B;color: #FBEFFB;}
+.bk_green a{color: #FBEFFB;}
+.bk_lightblue{background:#aaffff;color: #333;}
+.borrad{border:solid 1px;border-radius: 10px;}
+.div320in300px {
+	width:300px;
+	margin: 5px auto;
+	padding:4px;
+	text-align:center;
+	vertical-align:center;
+	border: #555555 1px solid;
+	border-radius: 10px;
+	background:#ffffff;
+}
+.opa05 {
+	opacity: 1;
+	transition: opacity 0s;
+}
+.opa05:hover {
+	opacity: 0.5;
+	transition: opacity 0s;
+}
+
+.f_right {
+	float:right;
+	margin: 0px 3px;
+}
+
+.f_left {
+	float:left;
+	margin: 0px 3px;
+}
+.f_left_nomagin {
+	float:left;
+	margin: 0px;
+}
+
+.icon {
+	width:16px;
+	border:none;
+	margin-top:-3px;
+	vertical-align:middle;
+}
+
+.linediv {
+	margin: 3px auto;
+	padding:5px;
+	width: calc(94% - 18px);
+	border: #aaaaaa 1px solid;
+	border-radius: 2px;
+	background-color:#E0F8F7;
+	max-width:500px;
+}
+
+.centerdiv {
+	text-align:center;
+	vertical-align:middle;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.rightdiv {
+	margin:0px;
+	padding:0px;
+	text-align:right;
+	vertical-align:top;
+}
+
+.leftdiv {
+	margin:0px;
+	padding:0px;
+	text-align:left;
+	vertical-align:top;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 999999;
+	top:0px;
+}
+
+.chart-container{
+	margin:0 auto;
+	margin-bottom:5px;
+	padding:10px 3px;
+	border: #aaaaaa 1px solid;
+	border-radius: 10px;
+}
+.margin_5{
+	margin:5px auto;
+}
+ol.num {
+	margin-left:25px;
+	padding-left:5px;
+	width: 90%;
+	margin-bottom:5px;
+}
+
+ol.num  li{
+	list-style-type:decimal;
+	color:#006400;
+	font-size:110%;
+	font-weight:bold;
+}
+ol.num  a{
+	color:#000099;
+}
+ol.num  p{
+	color:#000000;
+	margin-bottom:5px;
+}
+
+ol.maru {
+	margin-left:25px;
+	padding-left:5px;
+	width: 90%;
+	margin-bottom:5px;
+}
+
+ol.maru  li{
+	list-style-type:circle;
+	color:#006400;
+	font-weight:bold;
+}
+
+.checkb {
+    padding: 0px;
+}
+.checkb input[type=radio],
+.checkb input[type=checkbox] {
+    display: inline-block;
+    margin-right: 1px;
+}
+.checkb input[type=radio] + label,
+.checkb input[type=checkbox] + label {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-right: 6px;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight:bold;
+}
+ 
+@media (min-width: 1px) {
+    .checkb input[type=radio],
+    .checkb input[type=checkbox] {
+        display: none;
+        margin: 0;
+    }
+    .checkb input[type=radio] + label,
+    .checkb input[type=checkbox] + label {
+        padding: 0 0 0 24px;
+    }
+    .checkb input[type=radio] + label::before,
+    .checkb input[type=checkbox] + label::before {
+        content: "";
+        position: absolute;
+        top: 1em;
+        left: 0;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-top: -9px;
+        background: #FFF;
+        border: 2px solid #444;
+        border-radius: 2px;
+    }
+
+    .checkb input[type=radio]:checked + label::after,
+    .checkb input[type=checkbox]:checked + label::after {
+        content: "";
+        position: absolute;
+        top: 1em;
+        left: 3px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 16px;
+        height: 8px;
+        margin-top: -8px;
+        border-left: 3px solid #ff0000;
+        border-bottom: 3px solid #ff0000;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}/*@media (min-width: 1px)*/
+
+.ranimg {
+	margin: 2px;
+	padding: 1px;
+	width: 150px;
+	float:left;
+}
+
+.lazyload, .lazyloading {
+opacity: 0;
+background-size:contain;
+width: 0px;
+} 
+.lazyloaded {
+opacity: 1;
+transition: opacity 2000ms;
+background-size:contain;
+}
+
+.viewer {
+	margin: 0 auto;
+	width: 99%;
+	position: relative;
+	overflow: hidden;
+}
+.viewer ul {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin:0 auto;
+}
+.viewer ul li {
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+.viewer ul li img {
+	width: 100%;
+}
+
+/* sideNavi
+------------------------- */
+.viewer .btnPrev,
+.viewer .btnNext {
+	margin-top: -25px;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 101;
+}
+.viewer .btnPrev {
+	left: 10px;
+	background: #ccc url(../img/btnPrev.jpg) no-repeat center center;
+}
+.viewer .btnNext {
+	right: 10px;
+	background: #ccc url(../img/btnNext.jpg) no-repeat center center;
+}

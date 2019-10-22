@@ -1,0 +1,31 @@
+<?php
+//サブ設定ファイル読み込み
+require_once("101_sub_conf.php");
+//基礎設定ファイル読み込み
+require_once($current."conf/102_conf.php");
+//ファイル通番----------------------！変更箇所
+$t_name = "Webページ作成オフィス";//このページのタイトル
+$des_name = "当オフィスは、無駄を省きながら必要最小限のサービスを使うことによって利益を最大に出来るのではないかとう方針でサービス提供を行っています";//ディスクリプション
+$keywd = "";//キーワード（最初に,を入れる）
+$head_flg = "0";//0=通常　1=タイトルのみ　2=すべて無し
+$foot_flg = "0";//0=通常　1=コピーライトのみ　2=すべて無し
+//ファイル通番----------------------！変更箇所終了
+
+//ヘッダーファイル読み込み
+require_once($conf_url."112_head.php");
+?>
+	<div id="content">
+		<div id="main_content">
+		デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />デモ<br />
+		</div>
+			<?php
+			require_once($conf_url."118_leftcon.php");
+			?>
+		<div class="clear"><hr /></div>
+	</div><!--content end-->
+	<div class="clear"><hr /></div>
+
+<?php
+//基礎設定ファイル読み込み
+require_once($conf_url."131_footer.php");
+?>

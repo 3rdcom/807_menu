@@ -1,0 +1,184 @@
+﻿/* 浮き出しmodal用 */
+/* ○○用 */
+.htgo_scrollbar-y-on {
+ overflow-y: scroll;
+}
+
+.htgo_nonscrollbar {
+	-ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+.htgo_nonscrollbar::-webkit-scrollbar { 
+        display:none;
+}
+#htgo_menu_button {
+	z-index:10020;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	margin:3px;
+	background-color: #000;
+	opacity:0.8;
+}
+#htgo_menu_button a{
+	z-index:10030;
+	height:100%;
+	width:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.htgo_menu-line1,
+.htgo_menu-line2,
+.htgo_menu-line3 {
+	position: absolute;
+	left:10px;
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+	transition-duration:1s;
+}
+.htgo_modal-open {
+  display:block;
+}
+.htgo_menu-line1 {
+	top:12px;
+}
+.htgo_menu-line2 {
+	top:23px;
+}
+.htgo_menu-line3 {
+	bottom:12px;
+}
+.htgo_modal-close {
+  display:block;
+}
+a.htgo_modal-close > .htgo_menu-line1 {
+  -webkit-transform: translateY(11px) rotate(-45deg);
+  transform: translateY(11px) rotate(-45deg);
+}
+a.htgo_modal-close > .htgo_menu-line2 {
+  opacity: 0;
+}
+a.htgo_modal-close > .htgo_menu-line3 {
+  -webkit-transform: translateY(-11px) rotate(45deg);
+  transform: translateY(-11px) rotate(45deg);
+}
+#htgo_menu {
+	width: 100%;
+	max-width: 400px;
+	min-width: 300px;
+	overflow:hidden;
+	margin-top:20px;
+	text-decoration: none;
+	text-align: center;
+	z-index:9999;
+}
+
+#htgo_menu h2{
+	width: calc(100% - 38px);
+	margin:0px auto;
+	margin-top:3px;
+	padding:11px 0px 9px 38px;
+	border-bottom: 1px solid #aaa;
+	border-radius:10px 10px 0px 0px;
+	font-weight:bold;
+	background: #E0F8E6 url(../img/l_h2_bk.jpg) no-repeat top left;
+	background-size: auto 100%;
+}
+#htgo_menu ul{
+	list-style-type:none;
+	width: 100%;
+	margin:0px auto;
+	padding:0px;
+}
+
+#htgo_menu li{
+	width: 98%;
+	margin:0px auto;
+	padding:3px 1%;
+	color:#fff;
+}
+
+#htgo_menu li:hover,
+#htgo_menu li:active,
+#htgo_menu li.li_here{
+	border-bottom: 1px solid #aaa;
+	color:#fff;
+	transform: scale(1.1);	
+	transition-duration: 0.3s;
+}
+
+#htgo_menu ul li a{
+ 	margin:0px 0px 0px 0px;
+	padding:5px 5px 5px 10px;
+	display:block;
+	color: #fff;
+	text-decoration:none;
+}
+
+#htgo_menu-content {
+    position:relative;
+    width:clac(98% - 10px);
+    max-width:400px;
+    margin:5px auto;
+    padding:0px;
+    display:none;
+    z-index:10020;
+}
+
+.htgo_modal-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+#htgo_menu-content p {
+    margin:0;
+    padding:0;
+}
+	
+.htgo_modal-overlay {
+    z-index:10000;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,1);
+}
+
+.htgo_modal-wrap {
+    z-index:10010;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+
+
+.htgo_modal-open {
+    text-decoration:none;
+}
+
+.htgo_modal-open:hover {
+    cursor:pointer;
+}
+
+.htgo_modal-close {
+    text-decoration:none;
+}
+
+.htgo_modal-close:hover {
+    cursor:pointer;
+}

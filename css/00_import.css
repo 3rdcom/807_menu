@@ -1,0 +1,5 @@
+/* CSSファイルインポート */
+/* ○○用 */
+@import url("01_base.css");
+@import url("11_wrap.css");
+@import url("807_ovarley_bottom_menu.css");
